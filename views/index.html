@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/submit-form" method="post" name="myForm" onsubmit="clearForm()">
+            <h2>Contact Us</h2>
+            <input type="text" name="first" placeholder="First Name" required>
+            <input type="text" name="last" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="mobile" placeholder="Phone Number" required>
+            <input type="text" name="adress" placeholder="Address" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script> 
+    function clearForm() {
+        window.alert("sent sucssesfully")
+        document.getElementById("myForm").reset();
+         } 
+        
+         </script>
+</body>
+</html>
